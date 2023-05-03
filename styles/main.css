@@ -1,5 +1,10 @@
 @import url(reset.css);
 @import url(/styles/header.css);
+@import url(/styles/welcome.css);
+@import url(/styles/clients.css);
+@import url(/styles/project.css);
+
+
 
 body {
     margin: 10px 0;
@@ -19,6 +24,52 @@ body {
     overflow: hidden;
 }
 
+section {
+    margin-top: 60px;
+}
+
+.yellow {
+    background-color: #EBD96B;
+}
+
+h2 {
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 100;
+    font-size: 48px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+/* h2:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: #EBD96B;
+    right: 40%;
+    bottom: 0;
+    width: 100px;
+    height: 30%;
+    border-top-right-radius: 10% 30%;
+    border-bottom-left-radius: 30% 10%;
+} */
+
+h2:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 100px);
+    width: 100px;
+    height: 77%;
+    transform: translate(34px, -3px) rotate(-2deg);
+    border-top-left-radius: 61px 101px;
+    border-bottom-right-radius: 108px 68px;
+    background-color: #EBD96B;
+    z-index: -1;
+}
+
 @media (max-width: 1200px) {
  
 }
@@ -30,5 +81,8 @@ body {
 }
 
 @media (max-width: 600px) {
- 
+    .container {
+        padding: 0 10px;
+        min-width: 370px;
+    }
 }

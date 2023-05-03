@@ -1,0 +1,31 @@
+.project {}
+.project_inner {
+    
+}
+.project__list {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.project__item {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project__item img {
+    overflow: hidden;
+}
+
+.project__item_open {
+    display: block;
+}
+
+.project__see-all-btn {}
+.project__prev-btn {}
+.project__next-btn {}
