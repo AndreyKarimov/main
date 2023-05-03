@@ -2,6 +2,10 @@
 .project_inner {
     
 }
+
+.project__list--wrapper {
+    position: relative;
+}
 .project__list {
     position: relative;
     height: 400px;
@@ -16,16 +20,61 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 0 0 20px -4px #EBD96B;
 }
 
 .project__item img {
-    overflow: hidden;
+    width: 100%;
+    height: auto;
 }
 
 .project__item_open {
     display: block;
 }
+.project__controls {
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 
-.project__see-all-btn {}
-.project__prev-btn {}
-.project__next-btn {}
+}
+.project__prev-btn, .project__next-btn {
+    width: 40px;
+    height: 50px;
+    background-image: url(../resourses/gallery-control-btn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: calc(50% - 15px);
+    outline: unset;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.project__prev-btn:hover, .project__next-btn:hover {
+    opacity: 0.5;
+}
+
+.project__next-btn {
+    transform: scale(-1, 1);
+}
+
+.project__see-all-btn {
+    margin-bottom: 10px;
+    min-width: 300px;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: 0;
+    text-align: center;
+    color: #000000;
+    opacity: 0.5;
+    transition: 0.1s ease-in-out;
+}
+.project__see-all-btn:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+
+}
