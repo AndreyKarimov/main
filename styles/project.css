@@ -13,7 +13,7 @@
 }
 
 .project__item {
-    display: none;
+    /* display: none; */
     position: absolute;
     left: 0;
     right: 0;
@@ -22,6 +22,10 @@
     overflow: hidden;
     border-radius: 40px;
     box-shadow: 0 0 20px -4px #EBD96B;
+
+    /* transform: translateX(100%) scale(0,1); */
+    transform: skew(90deg, 0);
+
 }
 
 .project__item img {
@@ -31,6 +35,11 @@
 
 .project__item_open {
     display: block;
+    transition-property: transform;
+    /* transform: translateX(0) scale(1,1); */
+    transform: skew(0,0);
+    transition: 0.5s ease-out;
+
 }
 .project__controls {
     position: absolute;
