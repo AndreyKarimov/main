@@ -1,0 +1,82 @@
+.footer {
+    background-color: #191C19;
+    
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer__contacts-title {
+    color: #EBD96B;
+}
+
+
+.footer__contacts-mail, .footer__contacts-tg {
+    height: 55px;
+    width: 55px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    border-radius: 50%;
+    background-color: #EBD96B;
+}
+
+.footer__contacts-mail {
+    background-image: url(../resourses/contacts_icn/mail.svg);
+}
+
+.footer__contacts-tg {
+    background-image: url(../resourses/contacts_icn/telegram.svg);
+}
+
+.footer__contacts-mail:hover, .footer__contacts-tg:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+
+.footer__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 20px;
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #EBD96B;
+}
+
+.footer__nav-item {
+
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #EBD96B;
+    opacity: 0.8;
+}
+
+.footer__nav-item:hover {
+    opacity: 1;
+}
+@media (max-width: 600px) {
+    .footer__nav, .footer__contacts {
+        flex-direction: column;
+        column-gap: 25px;
+        justify-content: flex-start;
+    }
+}

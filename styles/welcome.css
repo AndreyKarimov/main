@@ -75,6 +75,10 @@
     letter-spacing: -0.08em;
     text-transform: uppercase;
 }
+
+.welcome--grey {
+    opacity: 0.5;
+}
 .welcome__description-rightside {
     border-left: 2px solid #EBD96B;
     font-size: 80px;
