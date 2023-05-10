@@ -1,11 +1,11 @@
-@import url(reset.css);
-@import url(/styles/header.css);
-@import url(/styles/welcome.css);
-@import url(/styles/clients.css);
-@import url(/styles/project.css);
-@import url(/styles/stack.css);
-@import url(/styles/skills.css);
-@import url(/styles/footer.css);
+@import url(../styles/reset.css);
+@import url(../styles/header.css);
+@import url(../styles/welcome.css);
+@import url(../styles/clients.css);
+@import url(../styles/project.css);
+@import url(../styles/stack.css);
+@import url(../styles/skills.css);
+@import url(../styles/footer.css);
 
 
 

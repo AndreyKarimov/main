@@ -6,8 +6,6 @@
     gap: 20px;
 }
 
-
-
 .welcome__inner {
     display: flex;
     flex-direction: row;
@@ -18,7 +16,6 @@
     padding-top: 30px;
     font-size: 80px;
     line-height: 65px;
-
     letter-spacing: -0.03em;
 }
 
@@ -26,7 +23,6 @@
 .welcome__title-firstname {
     font-weight: 200;
     letter-spacing: -0.03em;
-
 }
 
 .welcome__title-lastname {
